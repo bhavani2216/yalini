@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>simple website</title>
+    <style type="text/css">
+      * {
+        text-decoration: none;
+      }
+      .navbar {
+        background-color:cyan;
+        font-family: "Times New Roman";
+        padding-right: 15px;
+        padding-left: 15px;
+      }
+      .navbar a:hover { 
+         background-color: white ;  
+        
+      }
+      .navdiv {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .logo a {
+        font-size: 35px;
+        font-weight: 600;
+        color: #1f1d1d;
+        
+      }
+      li {
+        list-style: none;
+        display: inline-block;
+        overflow: auto;
+        border-radius: 200px;
+
+ 
+      }
+      li a {
+        color:black;
+        font-size: 30px;
+        font-weight:bold;
+        margin-right: 30px;
+        border-radius: 200px;
+      }
+      
+      .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      
+      .side {
+        flex: 30%;
+        background-color: #eeebeb;
+        padding: 200px;
+      }
+      .main {
+        flex: 70%;
+        background-color: rgb(224, 59, 59);
+        padding: 20px;
+        
+      }
+      .split {
+        display: flex;
+        height: calc(
+          100vh - 140px
+        );
+      }
+
+      .split .left {
+        width: 30%;
+        background-color: #f4f4f4;
+        padding: 30px;
+        box-sizing: border-box;
+      }
+
+      .split .right {
+        width: 70%;
+        padding: 30px;
+        box-sizing: border-box;
+        background-image: url('bhavvvv.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        font: size 30p;
+        text-align: center;
+      
+       
+      }
+      .button {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 16px;
+            color:black;
+            background-color:transparent;
+          
+            border-radius: 40px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 10.5px; 
+            outline: none;
+            transition: background-color 50 ease;
+           
+        }
+        .button2 {
+            display: inline-block;
+            padding: 10px 30px;
+            font-size: 16px;
+            color:black;
+            background-color:gray;
+            border: #1f1d1d;
+            border-radius: 50px;
+            text-align: center;
+            text-decoration: none;
+            cursor: pointer;
+            margin: 10.5px; 
+          
+            transition: background-color 50 ease;
+           
+        }
+        
+        
+          
+
+        .button:hover {
+          background-color:grey;  
+            transform:scale(1);
+             opacity: (0.7); 
+        }
+
+        
+   
+      .footer {
+        background-color:cyan;
+        color:black;
+        text-align:left;
+        padding: 10px 0;
+        position:fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navdiv">
+        <div class="logo"><a href="a">MASTER</a></div>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Gallery</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <div class="split">
+      <div class="left">
+        
+        <p>A  website  is  a collection of related web pages that are typically identified by a common domain name and are accessible over the internet. Websites can serve various purposes and functions, and they are built using web technologies to present content, interact with users, and provide services.
+            Overall, a website is a powerful tool for communication, commerce, and information dissemination in the digital age. It combines various elements and technologies to provide a platform for users to access and interact with content and services.
+        </p>
+      </div>
+      <div class="right">
+        <h2>Mastermind Tech</h2>
+        <h3>hiiiiii</h3>
+        
+        <p>It combines various elements and technologies to provide a platform for users to access and interact with content and services.</p>
+        <button class="button"> Watch video</button>
+        <button class="button2"> Subscribe</button>
+      </div>
+    </div>
+    <div class="footer">
+      <h2>www.mastermind.tech.in</h2>
+    </div>
+  </body>
+</html>
